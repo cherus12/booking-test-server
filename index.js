@@ -9,7 +9,15 @@ dotenv.config()
 
 const app = express()
 
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001'] }))
+app.use(
+	cors({
+		origin: [
+			'http://localhost:3000',
+			'http://localhost:3001',
+			'https://booking-test-theta.vercel.app',
+		],
+	})
+)
 app.use(express.json())
 
 const connect = async () => {
