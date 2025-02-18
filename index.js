@@ -15,6 +15,7 @@ app.use(
 			'http://localhost:3000',
 			'http://localhost:3001',
 			'https://booking-test-theta.vercel.app',
+			'https://booking-test-server.onrender.com',
 		],
 	})
 )
